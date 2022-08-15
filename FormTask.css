@@ -1,0 +1,145 @@
+body {
+  background-color: #f2f7ff;
+}
+.form {
+  width: 650px;
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.checkedInputs,
+.CheckOpacity {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.div1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.div2 {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 5px;
+}
+.div2 button,
+.opacity {
+  border: none;
+  background-color: white;
+  opacity: 0.3;
+}
+.div2 button .font {
+  font-size: 20px;
+}
+
+.ESC {
+  display: block;
+}
+
+.search input {
+  border: none;
+  width: 90%;
+}
+.check {
+  position: relative;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 50%;
+  justify-content: center;
+  opacity: 0.4;
+  box-shadow: 2px 2px #888;
+  border-radius: 3px;
+}
+.check:first-child {
+  border: none;
+  border-bottom: 1px solid;
+  box-shadow: none;
+}
+.check .checkIn {
+  position: absolute;
+  right: 5px;
+}
+.buttons {
+  display: flex;
+  width: 347px;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons button {
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+}
+.buttons .gradiant {
+  background: linear-gradient(
+    to right,
+    rgba(37, 37, 255, 0.5),
+    rgb(68, 68, 255)
+  );
+  color: white;
+}
+.normal {
+  opacity: 0.2;
+}
+
+.checkedInputs .check:hover {
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px grey;
+}
+
+button:focus {
+  background-color: #888;
+}
+
+.checkIn:checked + .check {
+  opacity: 1;
+  color: black;
+  color: green;
+}
+
+
+
+.CheckOpacity {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+.CheckOpacity input {
+  position: absolute;
+  justify-content: flex-end;
+  right: -5px;
+  top: 30%;
+  opacity: 0.4;
+}
+.CheckOpacity label {
+  width: 100%;
+}
+.fa-circle-o {
+  color: grey;
+}
+.checkIn {
+  visibility: hidden;
+}
+.fa-circle-o {
+  position: absolute;
+  right: 5px;
+  top: 30%;
+}
+.checkIn:checked + .fa::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  color: lightgreen;
+}
