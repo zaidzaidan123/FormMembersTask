@@ -107,10 +107,7 @@ button:focus {
 .checkIn:checked + .check {
   opacity: 1;
   color: black;
-  color: green;
 }
-
-
 
 .CheckOpacity {
   display: flex;
@@ -127,19 +124,32 @@ button:focus {
 .CheckOpacity label {
   width: 100%;
 }
-.fa-circle-o {
-  color: grey;
-}
 .checkIn {
-  visibility: hidden;
+  display: none;
 }
-.fa-circle-o {
+
+input[type="checkbox"] + label::after {
+  content: "";
   position: absolute;
-  right: 5px;
-  top: 30%;
+  right: 4px;
+  top: 19%;
+  border: 0.5px solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  border-color: green;
 }
-.checkIn:checked + .fa::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f058";
-  color: lightgreen;
+input[type="checkbox"]:checked + label::before {
+  content: "\2714";
+  color: rgb(81, 241, 81);
+  position: absolute;
+  right: 4px;
+  top: 19%;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-bottom: 3px;
 }
